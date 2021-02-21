@@ -4,6 +4,16 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+
+var admin = require("firebase-admin");
+
+var serviceAccount = require("path/to/serviceAccountKey.json");
+
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount)
+});
+
+
 (function($) {
 
 	var	$window = $(window),
