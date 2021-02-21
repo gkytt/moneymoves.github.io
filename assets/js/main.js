@@ -7,7 +7,7 @@
 
 var admin = require("firebase-admin");
 
-var serviceAccount = require("path/to/serviceAccountKey.json");
+var serviceAccount = require("money-moves-8cf6d-firebase-adminsdk-68oxf-77ea84e35a.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount)
